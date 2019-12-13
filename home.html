@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title> Vote on face value..!!</title>
+<script type="text/javascript">
+var voteA = 0;
+var voteB = 0;
+function voteCandidateA(){
+voteA = voteA +1;
+document.getElementById('voteA').innerHTML = voteA;
+}
+
+function voteCandidateB(){
+voteB = voteB +1;
+document.getElementById('voteB').innerHTML = voteB;
+}
+
+</script>
+
+<link rel="stylesheet" type="text/css" href="home.css">
+
+</head>
+<body>
+
+
+<div id="candidates">
+
+<div class="imgContainer">
+<div id="voteA">  <p>    0  </p></div>
+<img src="candidate1.jpg" alt="Image of candidate 1" style="width:300px;height:500px;">
+<button onclick="voteCandidateA();">Vote Candidate One!</button>
+</div>
+
+
+<div class="imgContainer">
+<div id="voteB">  <p>    0  </p></div>
+<img src="candidate2.jpg" alt="Image of candidate 2" style="width:300px;height:500px;">
+<button onclick="voteCandidateB();">Vote Candidate Two!</button>
+</div>
+
+</div>
+
+
+
+
+    
+</div>
+</body>
+</html>
